@@ -27,4 +27,7 @@ Track your progress and stay motivated.
 ![Screenshot 2024-11-09 225533](https://github.com/user-attachments/assets/519af7e5-9db4-4ad3-9449-d3595f6b2e11)
 ![Screenshot 2024-11-09 225509](https://github.com/user-attachments/assets/c75cf47b-e832-48c2-85a8-76196e7729e7)
 
+Presentation: 
+https://www.canva.com/design/DAGWBDm3EBI/WZj9PImJchZhdX2j7LkZsA/edit?utm_content=DAGWBDm3EBI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 
