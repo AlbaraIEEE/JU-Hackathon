@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <!-- Link logo to the homepage -->
+            <a href="index.html">
+                <img src="learnverse-high-resolution-logo-transformed.png" alt="Learnverse Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" id="intelligent-tutor">Intelligent Tutor</a></li>
+                <li><a href="#" id="exams">Exams</a></li>
+                <li><a href="#" id="Experiments">Experiments</a></li>
+                <li><a href="#" id="roadmaps">Roadmaps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scroll Animation Image Section -->
+    <section class="scroll-section">
+        <div class="scroll-image">
+            <img src="Classroom.jpg" alt="Classroom Image">
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <h1>Welcome to Learnverse</h1>
+        <p>
+            Welcome to Learnverse, your gateway to a world of endless knowledge and growth. In a rapidly changing world, education is more crucial than ever, and we're here to make learning engaging, accessible, and tailored just for you. From intelligent tutoring to interactive flashcard games and structured learning roadmaps, our resources are designed to support every learner. This field is ever-expanding, just like the universe, offering limitless opportunities for exploration and discovery. Join us in this journey of lifelong learning and unleash your full potential!
+        </p>
+    </section>
+
+    <!-- Styles -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 0 15px;
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 140px;
+            width: auto;
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 4px 10px;
+            transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+            border-radius: 12px;
+        }
+
+        /* Violet Hover Effect */
+        nav ul li a:hover {
+            color: #ffffff;
+            background-color: #8a2be2;
+            border-radius: 20px;
+        }
+
+        /* Scrollable Image Section */
+        .scroll-section {
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scroll-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .scroll-image img {
+            width: 100%;
+            height: auto;
+            transform: translateY(0);
+            transition: transform 0.5s ease-out;
+        }
+
+        /* Parallax Effect: Image moves slower on scroll */
+        .scroll-section img {
+            will-change: transform;
+        }
+
+        /* Content Section for Scrolling */
+        .content {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .content h1 {
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            margin-bottom: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+
+    <!-- JavaScript for navigation and scroll effect -->
+    <script>
+        // Scroll effect
+        window.addEventListener("scroll", function() {
+            const scrollPosition = window.scrollY;
+            const image = document.querySelector(".scroll-image img");
+            image.style.transform = `translateY(${scrollPosition * 0.3}px)`;  // Corrected syntax with backticks
+        });
+
+        // Navigation to specific pages for each button
+        document.getElementById("intelligent-tutor").addEventListener("click", function() {
+            window.location.href = "http://192.168.100.6:8504"; // Replace with actual URL
+        });
+
+        document.getElementById("exams").addEventListener("click", function() {
+            window.location.href = "http://192.168.100.6:8503"; // Replace with actual URL
+        });
+
+        document.getElementById("Experiments").addEventListener("click", function() {
+            window.location.href = "http://192.168.100.6:8501"; // Replace with actual Streamlit app URL
+        });
+
+        document.getElementById("roadmaps").addEventListener("click", function() {
+            window.location.href = "http://localhost:8502"; // Replace with actual URL
+        });
+    </script>
+</body>
+</html>
